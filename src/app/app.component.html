@@ -1,0 +1,7 @@
+
+<div class="product-card-container"  >
+  <img *ngIf="(dato$ | async).position === 'arriba'"  class="product-card-img"  src="../assets/index.png" alt='image'>
+  <p  >Texto de prueba</p>
+  <img *ngIf="(dato$ | async).position === 'abajo'"  class="product-card-img"  src="../assets/index.png" alt='image'>
+  <button class="btn btn-primary" (click) = "CambiarPosicion()">Cambiar posicion</button>
+</div>
